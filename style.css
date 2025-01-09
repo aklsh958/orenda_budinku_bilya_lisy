@@ -1,12 +1,13 @@
-/* Загальні стилі */
+/* General reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -14,195 +15,26 @@ body {
 .container {
     width: 90%;
     margin: 0 auto;
-    padding: 20px;
 }
 
-/* Стиль для хедеру */
 header {
-    background: linear-gradient(45deg, #2e8b57, #8fbc8f);
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
-
-/* Стиль для секцій */
-section {
-    padding: 60px 0;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #2e8b57;
-    font-weight: 600;
-}
-
-/* Стиль для "Про будинок" */
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    font-weight: 400;
-    color: #666;
-}
-
-/* Стиль для детальної інформації */
-.details {
-    background-color: #f9faf9;
-}
-
-.house-details {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.detail-item {
-    width: 30%;
-    margin-bottom: 20px;
-}
-
-.detail-item h3 {
-    font-size: 24px;
-    color: #2e8b57;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-.detail-item ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.detail-item ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Стиль для галереї */
-.gallery {
-    background-color: #f1f1f1;
-}
-
-.gallery-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.gallery-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.gallery-images img:hover {
-    transform: scale(1.05);
-}
-
-/* Стиль для контактів */
-.contact ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.contact ul li {
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-.contact ul li a {
-    color: #2e8b57;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.contact ul li a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
-}
-
-/* Стиль для футеру */
-footer {
-    background: #2e8b57;
+    background-color: #3e8e41;
     color: white;
     padding: 20px 0;
     text-align: center;
-    font-size: 14px;
-    margin-top: 40px;
 }
 
-footer p {
-    margin: 0;
+header h1 {
+    font-size: 2.5em;
 }
 
-/* Адаптивність */
-@media (max-width: 768px) {
-    .house-details {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .detail-item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .gallery-images {
-        grid-template-columns: repeat(2, 1fr);
-    }
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    .gallery-images {
-        grid-template-columns: 1fr;
-    }
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
+
