@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Оренда затишного будинку біля лісу в селі Залісся для святкувань, відпочинку та подій. Затишок, природа та комфорт чекають на вас.">
+    <meta name="keywords" content="оренда будинку, ліс, святкування, відпочинок, Залісся, Київська область">
+    <meta name="author" content="Оренда будинку біля лісу">
     <title>Оренда будинку біля лісу</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -27,29 +30,73 @@
     <section id="about" class="about">
         <div class="container">
             <h2>Про будинок</h2>
-            <p>Здається затишний будинок в с. Залісся, Броварського району, Київської області для ваших урочистих подій: святкування Дня народження, Новий Рік, Різдво, Великдень та інших подій. Нехай природа та комфорт стануть чудовою атмосферою для ваших свят.</p>
+            <p>Здається затишний будинок в с. Залісся, Броварського району, Київської області для ваших урочистих подій: святкування Дня народження, Новий Рік, Різдво, Великдень та інших подій. Нехай природа та комфорт стануть чудовою атмосферою для ваших свят. Наш будинок — це ідеальний вибір для тих, хто хоче провести час серед природи, з усіма сучасними зручностями.</p>
         </div>
     </section>
 
-    <!-- Форма для бронювання -->
-    <section id="booking" class="booking">
+    <section id="details" class="details">
         <div class="container">
-            <h2>Забронювати будинок</h2>
-            <form action="process_booking.php" method="POST">
-                <label for="name">Ваше ім'я</label>
-                <input type="text" id="name" name="name" required>
+            <h2>Деталі будинку</h2>
+            <div class="house-details">
+                <div class="detail-item">
+                    <h3>Будинок</h3>
+                    <ul>
+                        <li>Одноповерховий, 80 м²</li>
+                        <li>3 спальні кімнати</li>
+                        <li>1 ванна кімната (душ та ванна)</li>
+                        <li>Простора вітальня</li>
+                        <li>Повністю обладнана кухня</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h3>Зручності</h3>
+                    <ul>
+                        <li>Центральне опалення</li>
+                        <li>Високошвидкісний інтернет</li>
+                        <li>Наявність мангалу в дворі</li>
+                        <li>Хвойний ліс за вікном</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h3>Умови оренди</h3>
+                    <ul>
+                        <li>Мінімальний термін оренди від 2-х діб</li>
+                        <li>Вартість: 500 грн./особа</li>
+                        <li>Максимальна кількість осіб: 10</li>
+                        <li>Важливо: тварини не дозволяються</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <label for="email">Ваш Email</label>
-                <input type="email" id="email" name="email" required>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Особливості будинку</h2>
+            <ul>
+                <li>Простора бесідка для вечірніх посиденьок</li>
+                <li>Чисте гірське повітря та звуки природи</li>
+                <li>Сучасна кухня для приготування страв</li>
+                <li>Зручні спальні з комфортними матрацами</li>
+                <li>Поруч ліс та стежки для пішого туризму</li>
+            </ul>
+        </div>
+    </section>
 
-                <label for="arrival">Дата заїзду</label>
-                <input type="date" id="arrival" name="arrival" required>
-
-                <label for="departure">Дата виїзду</label>
-                <input type="date" id="departure" name="departure" required>
-
-                <button type="submit">Забронювати</button>
-            </form>
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Галерея інтер'єру</h2>
+            <div class="gallery-images">
+                <img src="living-room.jpg" alt="Вітальня будинку">
+                <img src="kitchen.jpg" alt="Кухня будинку">
+                <img src="kitchen1.jpg" alt="Кухня будинку - інший вигляд">
+                <img src="bedroom1.jpg" alt="Спальня 1">
+                <img src="bedroom2.jpg" alt="Спальня 2">
+                <img src="bedroom3.jpg" alt="Спальня 3">
+                <img src="bathroom1.jpg" alt="Ванна кімната 1">
+                <img src="bathroom2.jpg" alt="Ванна кімната 2">
+                <img src="hallway.jpg" alt="Коридор будинку">
+            </div>
         </div>
     </section>
 
