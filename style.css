@@ -76,6 +76,26 @@ h2 {
     text-align: center;
 }
 
+/* Галерея */
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* автоматичне підстроювання колонок */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* додано ефект на наведення */
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05); /* ефект збільшення картинки при наведенні */
+}
+
 /* Деталі будинку */
 .house-details {
     display: flex;
@@ -113,20 +133,6 @@ h2 {
 
 .features ul li {
     margin-bottom: 15px;
-}
-
-/* Галерея */
-.gallery-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery-images img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Контакти */
