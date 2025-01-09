@@ -1,23 +1,17 @@
 /* Загальні стилі */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
     color: #333;
 }
 
-h1, h2, h3 {
-    color: #4CAF50;
-    font-weight: bold;
-    margin: 20px 0;
-    text-align: center;
-}
-
-/* Контейнер */
+/* Контейнер для контенту */
 .container {
     width: 90%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 /* Хедер */
@@ -28,21 +22,28 @@ header {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
@@ -52,28 +53,66 @@ nav ul li a:hover {
 
 /* Секції */
 section {
-    padding: 40px 0;
-}
-
-.about, .details, .gallery, .booking, .contact {
+    padding: 60px 0;
     background-color: white;
-    margin: 20px 0;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.details-list div {
+/* Заголовки секцій */
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Про будинок */
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Деталі будинку */
+.house-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.detail-item {
+    width: 30%;
     margin-bottom: 20px;
 }
 
-.details-list ul {
+.detail-item h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #4CAF50;
+}
+
+.detail-item ul {
     list-style: none;
     padding: 0;
 }
 
-.details-list ul li {
-    margin: 8px 0;
+.detail-item ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Особливості будинку */
+.features ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.features ul li {
+    margin-bottom: 15px;
 }
 
 /* Галерея */
@@ -85,66 +124,78 @@ section {
 
 .gallery-images img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Форма бронювання */
-.booking form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.booking input, .booking button {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-}
-
-.booking button {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-}
-
-.booking button:hover {
-    background-color: #45a049;
 }
 
 /* Контакти */
 .contact ul {
     list-style: none;
     padding: 0;
+    font-size: 1.2em;
     text-align: center;
 }
 
 .contact ul li {
-    margin: 15px 0;
-    font-size: 1.1em;
+    margin-bottom: 15px;
 }
 
 .contact ul li a {
     text-decoration: none;
     color: #4CAF50;
+    font-weight: bold;
 }
 
 .contact ul li a:hover {
-    color: #45a049;
+    color: #333;
 }
 
-/* Footer */
+/* Футер */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .house-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr;
+    }
 }
