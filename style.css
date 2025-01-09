@@ -1,23 +1,17 @@
 /* Загальні стилі */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
 }
 
 h1, h2, h3 {
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
+    color: #4CAF50;
+    font-weight: bold;
     margin: 20px 0;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-top: 20px;
+    text-align: center;
 }
 
 /* Контейнер */
@@ -28,74 +22,58 @@ h1 {
 
 /* Хедер */
 header {
-    background: linear-gradient(to right, #4CAF50, #45a049);
+    background-color: #4CAF50;
     color: white;
     padding: 20px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-left: 30px;
+    text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: flex-end;
     list-style: none;
     padding: 0;
-    margin-top: 10px;
 }
 
 nav ul li {
+    display: inline;
     margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
     font-size: 1.1em;
-    padding: 10px 20px;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #45a049;
-    transform: scale(1.1);
-}
-
-nav ul li a.btn-book {
-    background-color: #FF7043;
-    padding: 12px 25px;
-}
-
-nav ul li a.btn-book:hover {
-    background-color: #FF5722;
+    color: #333;
 }
 
 /* Секції */
 section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
-.about {
-    background-color: #f0f0f0;
-    text-align: center;
+.about, .details, .gallery, .booking, .contact {
+    background-color: white;
+    margin: 20px 0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.details, .gallery, .booking, .contact {
-    background-color: #ffffff;
-    margin-top: 20px;
-    padding: 50px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.details-list div {
+    margin-bottom: 20px;
+}
+
+.details-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.details-list ul li {
+    margin: 8px 0;
 }
 
 /* Галерея */
@@ -107,7 +85,7 @@ section {
 
 .gallery-images img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -118,7 +96,7 @@ section {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .booking input, .booking button {
@@ -168,3 +146,5 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
+    text-align: center;
+}
