@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Оренда затишного будинку біля лісу в селі Залісся для святкувань, відпочинку та подій. Затишок, природа та комфорт чекають на вас.">
-    <meta name="keywords" content="оренда будинку, ліс, святкування, відпочинок, Залісся, Київська область">
-    <meta name="author" content="Оренда будинку біля лісу">
     <title>Оренда будинку біля лісу</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,19 +18,22 @@
                 <li><a href="#features">Особливості</a></li>
                 <li><a href="#gallery">Галерея</a></li>
                 <li><a href="#contact">Контакти</a></li>
+                <li><a href="#booking" class="btn-book">Забронювати</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main>
+    <!-- Section: About -->
     <section id="about" class="about">
         <div class="container">
             <h2>Про будинок</h2>
-            <p>Здається затишний будинок в с. Залісся, Броварського району, Київської області для ваших урочистих подій: святкування Дня народження, Новий Рік, Різдво, Великдень та інших подій. Нехай природа та комфорт стануть чудовою атмосферою для ваших свят. Наш будинок — це ідеальний вибір для тих, хто хоче провести час серед природи, з усіма сучасними зручностями.</p>
+            <p>Здається затишний будинок в с. Залісся, Броварського району, Київської області для ваших урочистих подій: святкування Дня народження, Новий Рік, Різдво, Великдень та інших подій. Нехай природа та комфорт стануть чудовою атмосферою для ваших свят.</p>
         </div>
     </section>
 
+    <!-- Section: Details -->
     <section id="details" class="details">
         <div class="container">
             <h2>Деталі будинку</h2>
@@ -70,6 +70,7 @@
         </div>
     </section>
 
+    <!-- Section: Features -->
     <section id="features" class="features">
         <div class="container">
             <h2>Особливості будинку</h2>
@@ -83,6 +84,7 @@
         </div>
     </section>
 
+    <!-- Section: Gallery -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Галерея інтер'єру</h2>
@@ -100,13 +102,36 @@
         </div>
     </section>
 
+    <!-- Section: Booking -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Забронюйте свій відпочинок</h2>
+            <form id="booking-form" action="mailto:diminfo.foresthouse@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="checkin">Дата заїзду:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Дата виїзду:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <button type="submit" class="btn-submit">Забронювати</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section: Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Контакти</h2>
             <p>Якщо вас зацікавила оренда нашого будинку, зв'яжіться з нами, і ми з радістю дамо вам всю необхідну інформацію!</p>
             <ul>
                 <li>Телефон: +380978738912</li>
-                 <li>Email: <a href="mailto:diminfo.foresthouse@gmail.com">diminfo.foresthouse@gmail.com</a></li>
+                <li>Email: <a href="mailto:info@foresthouse.com">info@foresthouse.com</a></li>
                 <li>Адреса: село Залісся, Броварський район, Київська область, Україна</li>
             </ul>
         </div>
